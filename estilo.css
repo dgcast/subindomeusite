@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family:regular ;
+    src: url('anton-regular.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face{
+    font-family:gabarito ;
+    src: url('gabarito-variablefont_wght.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+:root{
+
+    --cor0:  #04E1F0;
+    --cor01: #2AB3BD;
+    --cor02: #3A848A;
+    --cor03: #365557;
+    --cor04: #2A3233;
+    --cor05: #FFFFFF;
+   
+   --font-titulo1: regular;
+   --font-titulo2: gabarito;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+background-color:#97eee480;
+margin: 0px;
+margin-top: 0px;
+}
+main{
+background-color: var(--cor05);
+min-width: 250px;
+max-width: 1000px;
+border-color: black;
+padding: 20px;
+margin: auto;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+main p{
+ margin: 15px 0px 12px 0px;
+ line-height: 2em;
+ text-align: justify;
+ text-indent: 15px;
+
+}
+main h2{
+color: var(--cor03);
+background-image: linear-gradient(to right, var(--cor01), transparent) ;
+padding: 5px;
+}
+main img{
+    width: 100%;
+}
+div.video{
+    background-color: #7e9491;
+    margin: 0px -20px 20px -20px;
+    padding: 20px;
+    padding-bottom: 40%;
+    position: relative;
+}
+div>iframe{
+position: absolute;
+top: 5%;
+left: 5%;
+height: 90%;
+width: 90%;
+}
+main img.pequena{
+width: 50%;
+display: block;
+margin: auto;
+}
+
+nav{
+    background-color: #206159;
+    color: #04E1F0;
+    
+}
+nav>a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.3em ;
+    padding-left: 10px;
+    transition-duration: .5s;
+}
+nav>a:hover{
+    background-color: #7e9491;
+    border-radius: 6px;
+}
+nav>a:active{
+    background-color: #2a3332;
+   
+}
+header{
+
+    background-image: linear-gradient(to top, #206159, #b4f7e680);
+    margin: auto;
+    text-align: center;
+    min-height: 150px;
+    padding-top: 20px;
+
+}
+header>h1{
+    color:var(--cor04) ;
+    font-family: var(--font-titulo1);
+}
+header>p{
+    color: white;
+    font-size: 1.3em;
+    padding-top: 25px;
+}
+aside{
+    background-color: var(--cor0);
+    border-radius: 10px;
+    padding: 10px;
+} 
+aside>h3{
+    background-image:linear-gradient(to right, black, transparent) ;
+    color: var(--cor05);
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10px;
+}
+aside>ul{
+    list-style-type: circle;
+    list-style-position: inside ;
+   columns: 2;
+}
+
+footer{
+    background-color: #2A3233;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+footer>p{
+
+
+
+}
